@@ -1,7 +1,5 @@
 //answer: 72017
-let a = await fetch("https://adventofcode.com/2022/day/1/input", {
-  "method": "GET",
-}).then(res=>res.text()).then(data=>{
+let a = await fetch("https://adventofcode.com/2022/day/1/input").then(res=>res.text()).then(data=>{
     let most = 0;
     data.split('\n\n').forEach(elf=>{
         let calories = 0;
